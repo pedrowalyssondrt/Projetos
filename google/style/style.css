@@ -1,0 +1,204 @@
+@charset "utf-8";
+* {
+   margin: 0px;
+   padding: 0px; 
+}
+
+:root {
+    --cor1: #000;
+    --cor2: #b1aeae7e;
+    --cor3: #f8f8f8;
+    --rodape: #f2f2f2;
+    --rodape2: #5f6368;
+
+    --padrao: Arial, Helvetica;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(58, 56, 56);
+    font-size: 13.5px;
+    font-family: var(--padrao)
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#direito {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#direito span {
+   margin-right: 10px; 
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+main img {
+    object-fit: contain;
+    height: 100px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+main img:hover {
+    cursor: pointer;
+}
+
+#pesquisa {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--cor2);
+    height: 25px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    max-width: 560px;
+    margin: 40px auto 0px;
+}
+
+.pesquisa input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 330px;
+    
+}
+
+#pesquisa:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+#pesquisa span {
+    padding-left: 10px; 
+    
+}
+
+#pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+#lupa, #tec, #mic, #can, #app, #acc {
+    color: grey;
+}
+
+#app:hover {
+    cursor: pointer;
+    background-color: #9da0a54f;
+    border-radius: 50%;
+}
+
+#acc:hover {
+    cursor: pointer;
+    background-color: #9da0a54f;
+    border-radius: 50%;
+}
+
+.botao {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao button {
+    margin: 7px;
+    padding: 11px 15px;
+    color: rgb(58, 56, 56);
+    background-color: var(--cor3);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.botao button:hover {
+    border: 1px solid rgba(185, 182, 182, 0.281);
+    box-shadow: 1px 1px 2px rgba(211, 207, 207, 0.171);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--rodape);
+    color: var(--rodape2);
+    font-size: 14px;
+    font-family: var(--padrao);
+    line-height: 47px;
+    border-top: var(--cor3);
+}
+
+footer div {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+}
+
+footer div p {
+    margin: 0 0 0 30px;
+    font-size: 15px;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#lista1 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#lista1 li {
+    margin: 0px 15px;
+}
+
+#lista2 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#lista2 li {
+    margin: 0px 15px;
+}
+
+#lista2 li a {
+    text-decoration: none;
+    color: var(--rodape2);
+}
