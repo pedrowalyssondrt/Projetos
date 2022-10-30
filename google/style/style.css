@@ -177,6 +177,15 @@ footer ul li:hover {
     cursor: pointer;
 }
 
+#rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#rodape {
+    justify-content: space-evenly;
+}
 
 #lista1 {
     list-style: none;
@@ -191,7 +200,6 @@ footer ul li:hover {
 #lista2 {
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 #lista2 li {
